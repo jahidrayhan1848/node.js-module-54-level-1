@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archangel Drone Services – Packages</title>
+  <style>
+    /* ====== Archangel Drone Services – Packages ====== */
+    .ads-packages {
+      padding: 48px 0;
+      background: #fff;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
+    }
+
+    /* Wider wrapper */
+    .ads-wrap {
+      max-width: 1400px;   /* widened from 1160px */
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .ads-packages h2 {
+      font-size: clamp(24px, 4vw, 40px);
+      text-align: center;
+      margin: 0 0 6px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .ads-sub {
+      text-align: center;
+      color: #6b7280;
+      margin: 0 auto 28px;
+      max-width: 860px;
+      font-size: clamp(14px, 2vw, 18px);
+    }
+
+    /* Grid Layout */
+    .ads-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    @media (min-width: 640px) {
+      .ads-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1024px) {
+      .ads-grid { grid-template-columns: repeat(4, 1fr); } /* 4 equal cards across */
+    }
+
+    /* Card Styles */
+    .ads-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 6px 22px rgba(0,0,0,.06);
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      transition: transform .2s ease, box-shadow .2s ease;
+      height: 100%;
+    }
+    .ads-grid > .ads-card { height: 100%; }
+
+    .ads-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(0,0,0,.09);
+    }
+
+    .ads-card h3 {
+      font-size: clamp(18px, 2.2vw, 22px);
+      margin: 0 0 6px;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+    .ads-card h3.nowrap { white-space: nowrap; }
+
+    .price {
+      font-weight: 700;
+      margin: 0 0 10px;
+      font-size: clamp(16px, 2vw, 20px);
+      color: #214461;
+    }
+
+    .features {
+      margin: 0 0 14px 0;
+      padding: 0;
+      list-style: none;
+      color: #374151;
+      font-size: clamp(14px, 1.8vw, 16px);
+      flex: 1 1 auto;
+    }
+    .features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 4px 0;
+    }
+    .features li::before {
+      content: "";
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #214461;
+      margin-top: 8px;
+      flex: none;
+    }
+
+    .note {
+      color: #6b7280;
+      font-size: clamp(13px, 1.6vw, 14px);
+      margin: 0 0 14px;
+    }
+
+    /* Button Styles */
+    .btn {
+      margin-top: auto;
+      display: inline-block;
+      text-align: center;
+      background: #000;
+      color: #fff;
+      font-weight: 700;
+      padding: 12px 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: clamp(14px, 2vw, 16px);
+      transition: all .2s ease;
+    }
+    .btn:hover { background: #000; color: #fff; border: 2px solid #000; }
+    .btn:active { transform: translateY(1px); }
+
+    /* ====== Extra Mobile Responsive Tweaks ====== */
+    @media (max-width: 480px) {
+      .ads-wrap {
+        padding: 0 16px; /* chhoto screen e padding kom */
+      }
+
+      .ads-card {
+        padding: 16px; /* card er padding chhoto */
+        border-radius: 12px;
+      }
+
+      .ads-card h3 {
+        font-size: 16px;
+      }
+
+      .price {
+        font-size: 15px;
+      }
+
+      .features li {
+        font-size: 14px;
+        gap: 6px;
+      }
+
+      .btn {
+        width: 100%; /* full width button mobile e */
+        font-size: 15px;
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<section class="ads-packages">
+  <div class="ads-wrap">
+    <h2>Archangel Drone Services – Packages</h2>
+    <p class="ads-sub">
+      FAA Part 107 certified &amp; fully insured. Transparent pricing with no surprises — serving Chattanooga &amp; North GA with professionalism you can trust.
+    </p>
+
+    <div class="ads-grid">
+      <!-- Real Estate -->
+      <article class="ads-card">
+        <h3>Real Estate – Showcase</h3>
+        <p class="price">$250 flat rate</p>
+        <ul class="features">
+          <li>35–40 interior photos</li>
+          <li>15–20 aerial photos + 1–2 min cinematic video</li>
+          <li>Front, side, and neighborhood context shots</li>
+        </ul>
+        <p class="note">Premium with agent intro/outro: $400–$600</p>
+        <a class="btn" href="https://sunfish-pug-a36l.squarespace.com/services-store-5rG4D/p/real-estate-showcase" target="_blank" rel="noopener">Book Flight</a>
+      </article>
+
+      <!-- Roofing / Construction / Inspections -->
+      <article class="ads-card">
+        <h3 class="nowrap">Roofing • Construction • Inspections</h3>
+        <p class="price">$150 / visit</p>
+        <ul class="features">
+          <li>Includes 15–20 aerial photos each visit</li>
+          <li>Recurring flyovers available (weekly / bi-weekly)</li>
+          <li>Photo/video reports for bids &amp; insurance</li>
+        </ul>
+        <p class="note">Typical monthly retainer: $1,000–$1,500</p>
+        <a class="btn" href="https://sunfish-pug-a36l.squarespace.com/services-store-5rG4D/p/roofing-construction-inspections" target="_blank" rel="noopener">Book Flight</a>
+      </article>
+
+      <!-- Media / Events / Marketing -->
+      <article class="ads-card">
+        <h3>Media • Events • Marketing</h3>
+        <p class="price">$100 / hour</p>
+        <ul class="features">
+          <li>Event coverage &amp; highlight reels</li>
+          <li>Corporate marketing reels</li>
+          <li>Damage/claim documentation</li>
+          <li>Accident scene capture</li>
+        </ul>
+        <p class="note">Multi-property discounts available</p>
+        <a class="btn" href="https://sunfish-pug-a36l.squarespace.com/services-store-5rG4D/p/media-events-marketing" target="_blank" rel="noopener">Book Flight</a>
+      </article>
+
+      <!-- Security Overwatch -->
+      <article class="ads-card">
+        <h3>Security Overwatch</h3>
+        <p class="price">Custom Pricing</p>
+        <ul class="features">
+          <li>Live aerial surveillance for events &amp; properties</li>
+          <li>Real-time monitoring with secure video feed</li>
+          <li>Support for law enforcement &amp; private security teams</li>
+          <li>Deterrence through visible drone presence</li>
+        </ul>
+        <p class="note">Tailored contracts available — contact for quote</p>
+        <a class="btn" href="https://sunfish-pug-a36l.squarespace.com/services-store-5rG4D/p/security-overwatch" target="_blank" rel="noopener">Book Flight</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
